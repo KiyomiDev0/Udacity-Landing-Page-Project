@@ -11,31 +11,31 @@ This is a simple landing page that with multiple sections and you can go to any 
   if you leave it empty, it will be set to the default value "Section 'Number'"
   <br>
   <br>
-  <img src="https://im3.ezgif.com/tmp/ezgif-3-3f3011af99.gif">
+  <img src="https://i.ibb.co/wJ4XCt6/1.gif">
   <br>
   <br>
   <li>Type any text you want</li>
   if you leave it empty, it will be set to the default value "Lorem ipsum ...etc"
   <br>
   <br>
-  <img src="https://im3.ezgif.com/tmp/ezgif-3-472cd0374d.gif">
+  <img src="https://i.ibb.co/PjV81f1/2.gif">
   <br>
   <br>
   <li>Add a second text if you want</li>
   if you leave it empty, it will be set to the default value "Aliquam a convallis ...etc"
   <br>
   <br>
-  <img src="https://im3.ezgif.com/tmp/ezgif-3-3319990b0b.gif">
+  <img src="https://i.ibb.co/jkBbbs1/3.gif">
   <br>
   <br>
   <li>Add a title of the link that will jump to the section when clicked</li>
   if you leave it empty, it will be set to the default value "Section 'Number'"
   <br>
   <br>
-  <img src="https://im3.ezgif.com/tmp/ezgif-3-d5285205e6.gif">
+  <img src="https://i.ibb.co/5YJ7mJs/4.gif">
   <br>
   <br>
   <li>Click on Generate and a new section will be created! and that's it!</li>
   <br>
-  <img src="https://im3.ezgif.com/tmp/ezgif-3-f3af389385.gif">
+  <img src="https://i.ibb.co/Pm4G3pL/5.gif">
 </ol>
