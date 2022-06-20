@@ -8,6 +8,7 @@ const sectionHeadingInput = document.getElementById('section-heading'),
       paragraphTwoInput = document.getElementById('paragraph-two'),
       linkTitleInput = document.getElementById('link-title'),
       generateSectionBtn = document.getElementById('btn');
+const scrollTopBtn = document.querySelector('.scroll-top');
 /** End Global Variables **/
 
 /** Begin Main Functions **/
@@ -85,10 +86,19 @@ function generateٍSection() {
     sectionsLength = sections.length;
 }
 
+// Show the scroll to top button when the user scrolls down 400px from the top of the page
+function showScrollBtn() {
+    if (document.body.scrollTop > 400) {
+        scrollTopBtn.classList.add('show-btn')
+    } else scrollTopBtn.classList.remove('show-btn')
+}
+
 /** End Main Functions **/
 
 /** Begin Events **/
+// window.addEventListener('scroll', isVisibleInViewport, showScrollBtn)
 window.onscroll = isVisibleInViewport;
+window.onscroll =  showScrollBtn
 
 // Scroll to section on link click
 navLinks.forEach(link => {
@@ -97,4 +107,8 @@ navLinks.forEach(link => {
 
 // Generate a new section when button clicked
 generateSectionBtn.addEventListener('click', generateٍSection);
+
+// When the scroll to top button clicked scroll to the top of the page
+scrollTopBtn.addEventListener('click', () => window.scrollTo(0, 0));
+
 /** End Events **/
