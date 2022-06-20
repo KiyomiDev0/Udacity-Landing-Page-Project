@@ -25,7 +25,7 @@ function addNavbarLinks() {
 addNavbarLinks()
 
 // Select Navigation bar Links
-const navLinks = document.querySelectorAll('#navbar__list a');
+let navLinks = document.querySelectorAll('#navbar__list a');
 
 // Add class 'active' to section when near top of viewport
 function isVisibleInViewport() {
@@ -84,6 +84,8 @@ function generateٍSection() {
     mainPage.appendChild(sectionEl);
     sections = document.querySelectorAll('[data-nav]');
     sectionsLength = sections.length;
+    navLinks = document.querySelectorAll('#navbar__list a');
+    navLinks.forEach(link => link.addEventListener('click', scrollToSection));
 }
 
 // Show the scroll to top button when the user scrolls down 400px from the top of the page
@@ -96,14 +98,11 @@ function showScrollBtn() {
 /** End Main Functions **/
 
 /** Begin Events **/
-// window.addEventListener('scroll', isVisibleInViewport, showScrollBtn)
 window.onscroll = isVisibleInViewport;
 window.onscroll =  showScrollBtn
 
 // Scroll to section on link click
-navLinks.forEach(link => {
-    link.addEventListener('click', scrollToSection);
-})
+navLinks.forEach(link => link.addEventListener('click', scrollToSection))
 
 // Generate a new section when button clicked
 generateSectionBtn.addEventListener('click', generateٍSection);
