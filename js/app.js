@@ -98,8 +98,10 @@ function showScrollBtn() {
 /** End Main Functions **/
 
 /** Begin Events **/
-window.onscroll = isVisibleInViewport;
-window.onscroll =  showScrollBtn
+window.onscroll = function () {
+    isVisibleInViewport();
+    showScrollBtn();
+}
 
 // Scroll to section on link click
 navLinks.forEach(link => link.addEventListener('click', scrollToSection))
