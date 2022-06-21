@@ -110,6 +110,6 @@ navLinks.forEach(link => link.addEventListener('click', scrollToSection))
 generateSectionBtn.addEventListener('click', generateٍSection);
 
 // When the scroll to top button clicked scroll to the top of the page
-scrollTopBtn.addEventListener('click', () => window.scrollTo(0, 0));
+scrollTopBtn.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
 
 /** End Events **/
